@@ -1,15 +1,21 @@
 {
-  "name": "todolist",
+  "name": "todo-list-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API de Tarefas (To-Do List) com Node.js, Express e Sequelize",
+  "main": "src/app.js",
   "scripts": {
-    "build": "npx tsc -w"
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
-  "keywords": [],
+  "keywords": ["todo", "api", "express", "sequelize", "sqlite"],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "typescript": "^5.2.2"
+    "express": "^4.18.2",
+    "sequelize": "^6.35.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
-}
+} 
